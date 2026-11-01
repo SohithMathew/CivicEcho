@@ -1,0 +1,10 @@
+{
+  "name": "CivicEcho - AI-Powered Civic Intelligence Platform",
+  "description": "AI-powered civic complaint reporting, geospatial risk analysis, multi-modal complaint verification, and automated municipal investigation engine.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

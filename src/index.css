@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Leaflet light theme map enhancements */
+.leaflet-container {
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+  background-color: #f8fafc !important;
+  outline: none;
+}
+
+.leaflet-popup-content-wrapper {
+  background: #ffffff !important;
+  color: #0f172a !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 12px !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05) !important;
+}
+
+.leaflet-popup-tip {
+  background: #ffffff !important;
+}
+
+.leaflet-popup-close-button {
+  color: #64748b !important;
+  padding: 6px !important;
+}
+.leaflet-popup-close-button:hover {
+  color: #0f172a !important;
+}
+
+/* Print Stylesheet for Official Municipal Audit Reports */
+@media print {
+  aside,
+  header,
+  nav,
+  .no-print {
+    display: none !important;
+  }
+
+  body, html, #root {
+    background: #ffffff !important;
+    color: #0f172a !important;
+    overflow: visible !important;
+    height: auto !important;
+  }
+
+  .print-dossier {
+    width: 100% !important;
+    color: #0f172a !important;
+    background: #ffffff !important;
+  }
+
+  @page {
+    margin: 1.2cm;
+    size: auto;
+  }
+}
